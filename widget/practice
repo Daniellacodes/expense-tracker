@@ -1,0 +1,107 @@
+//EXPANDED WIDGET
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          body: Column(
+        children: [
+          Container(
+            height: 100,
+            color: Colors.deepPurpleAccent,
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.pink,
+            ),
+          ),
+        ],
+      )),
+    );
+  }
+}
+//listview
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: ListView(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                color: Colors.deepPurple[200],
+              ),
+            ),
+             Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                color: Colors.deepPurple[200],
+              ),
+            ),
+             Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                color: Colors.deepPurple[200],
+              ),
+            ),
+             Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                color: Colors.deepPurple[200],
+              ),
+            ),
+             Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                color: Colors.deepPurple[200],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+//CLIPRRECT
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+      body: Center(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Container(
+            height: 300,
+            width: 300,
+            color: Colors.deepPurple,
+          ),
+        ),
+      ),
+    ),
+    );
+  }
+}
+
