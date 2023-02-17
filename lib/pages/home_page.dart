@@ -114,7 +114,7 @@ class _HomePageState extends State<HomePage> {
   //save
   void save() {
     // putting shs and cts together
-    String amount ='ksh{newExpenseShillingsController.text}.ksh{newExpenseCentsController.text}';
+    String amount ='${newExpenseShillingsController.text}.${newExpenseCentsController.text}';
     //create expense item
     ExpenseItem newExpense = ExpenseItem(
       name: newExpenseNameController.text,
